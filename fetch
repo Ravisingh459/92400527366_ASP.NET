@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace fetch
+{
+    public partial class fetch : System.Web.UI.Page
+    {
+        string un = "";
+        string up = "";
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            un = TextBox1.Text;
+            up = TextBox2.Text;
+
+            Response.Write("Entered Username is " + un);
+            Response.Write("<br>Entered Password is " + up);
+        }
+    }
+}
